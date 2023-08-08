@@ -15,6 +15,12 @@
 ### Timing Diagram
 ![image](https://github.com/Sourav365/SPI_Protocol_for_FPGA/assets/49667585/8231d6e8-4dc2-4377-b4da-9a2c25e628f6)
 
-  Master Should Start data sending at falling edge
+  Master Should Start data sending at the falling edge of clk
 
-  Slave will sense data at rizing edge of clk
+  Slave will sense data at the rising edge of clk
+
+### Output of Verilog code
+<img width="714" alt="image" src="https://github.com/Sourav365/SPI_Protocol_for_FPGA/assets/49667585/df9ed116-2f1c-4172-a9d3-4d1dd09a8b1e">
+
+But here, after the **data_sent** signal is high, it continuously sends the last bit, as the **spi_clk** is running continuously.
+We've to make idle the **spi_clk** after the **data_sent** signal is high.
