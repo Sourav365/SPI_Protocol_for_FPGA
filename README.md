@@ -26,3 +26,5 @@
 
 But here, after the **data_sent** signal is high, it continuously sends the last bit, as the **spi_clk** is running continuously.
 We've to make idle the **spi_clk** after the **data_sent** signal is high. --> Using clk gatting
+
+<img width="934" alt="image" src="https://github.com/Sourav365/SPI_Protocol_for_FPGA/assets/49667585/c83e5ac0-8eae-4d65-99db-a8d6245ca86b">
