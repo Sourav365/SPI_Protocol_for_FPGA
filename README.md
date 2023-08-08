@@ -22,5 +22,7 @@
 ### Output of Verilog code
 <img width="714" alt="image" src="https://github.com/Sourav365/SPI_Protocol_for_FPGA/assets/49667585/df9ed116-2f1c-4172-a9d3-4d1dd09a8b1e">
 
+**data_sent** signal becomes _HIGH_ as long as it doesn't receive any **load_data** signal.
+
 But here, after the **data_sent** signal is high, it continuously sends the last bit, as the **spi_clk** is running continuously.
 We've to make idle the **spi_clk** after the **data_sent** signal is high. --> Using clk gatting
