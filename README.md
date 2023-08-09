@@ -51,5 +51,7 @@ The extra pin D/C# (Data/Command) tells whether we're sending commands (page no,
 
 <img width="931" alt="image" src="https://github.com/Sourav365/SPI_Protocol_for_FPGA/assets/49667585/f46ff7f3-e65c-4491-8d04-64cc6a8e9275">
 
+## Output at ILA Debugging tool
 
+<img width="655" alt="image" src="https://github.com/Sourav365/SPI_Protocol_for_FPGA/assets/49667585/13888193-6e7f-4307-bdf0-9df92c7d727c">
 
