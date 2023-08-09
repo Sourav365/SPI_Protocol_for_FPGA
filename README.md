@@ -5,7 +5,7 @@
 128 x 32 pixel
 1. SCLK (Serial Clk)     --> AB12
 2. SDIN/MOSI(Serial Data)--> AA12
-3. D/C# (Data/Command)   --> U10 ....................
+3. D/C# (Data/Command)   --> U10 
 4. CS# (Chip Select)     --> Pulled Down
 5. RES# (Reset)          --> U9
 
@@ -28,3 +28,22 @@ But here, after the **data_sent** signal is high, it continuously sends the last
 We've to make idle the **spi_clk** after the **data_sent** signal is high. --> Using clk gatting
 
 <img width="934" alt="image" src="https://github.com/Sourav365/SPI_Protocol_for_FPGA/assets/49667585/c83e5ac0-8eae-4d65-99db-a8d6245ca86b">
+
+
+
+## OLED Interfacing
+
+OLED has 4 pages.
+
+![image](https://github.com/Sourav365/SPI_Protocol_for_FPGA/assets/49667585/69d06da0-c56a-428a-a0c5-f2f8281124c8)
+
+Each page has 128 segments and 8 columns. 
+
+![image](https://github.com/Sourav365/SPI_Protocol_for_FPGA/assets/49667585/8feefbd5-6054-4aa7-8f3b-9dcf50a1a868)
+
+Display data is stored in Graphic Display Data RAM (GDRAM). So memory size = 32x128
+
+The extra pin D/C# (Data/Command) tells whether we're sending commands (page no...) or data to display.
+
+
+
