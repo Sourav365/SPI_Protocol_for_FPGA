@@ -46,7 +46,7 @@ Display data is stored in Graphic Display Data RAM (GDRAM). So memory size = 32x
 The extra pin D/C# (Data/Command) tells whether we're sending commands (page no, column no, en/di display...) or data to display.
 
 ### Initializing the display
-![image](https://github.com/Sourav365/SPI_Protocol_for_FPGA/assets/49667585/b6a79452-a315-4a6b-a306-8bdc6604a0c2)
+![image](https://github.com/Sourav365/SPI_Protocol_for_FPGA/assets/49667585/49c897df-ecf3-4038-b945-52281b430805)
 
 
 
